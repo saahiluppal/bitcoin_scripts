@@ -11,7 +11,7 @@ private_key = kg.generate_key()
 #private_key = '0C28FCA386C7A227600B2FE50B7CAE11EC86D3BF1FBE471BE89827E19D72AA1D'
 
 # 2. Add a 0x80 byte in front of it for mainnet addresses or 0xef for testnet addresses. Also add a 0x01 byte at the end if the private key will correspond to a compressed public key
-extended_key = "80" + str(private_key)
+extended_key = "80" + private_key
 
 # 3. Perform SHA256 hash on the extended key.
 #first_sha256 = hashlib.sha256(binascii.unhexlify(extended_key)).hexdigest()
@@ -30,10 +30,10 @@ final_key = extended_key+checksum
 # Wallet Import Format = base 58 encoding final_key
 #WIF = base58.b58encode(binascii.unhexlify(final_key))
 WIF = base58.b58encode(codecs.decode(final_key,'hex'))
+WIF_string = WIF.decode('utf-8')
 
 print(WIF)
-
-#return WIF
+#print(WIF_string)
 
 
 # I refered this site https://en.bitcoin.it/wiki/Wallet_import_format
