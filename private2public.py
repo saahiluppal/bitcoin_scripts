@@ -1,3 +1,5 @@
+# hex private to hex public key implementation
+
 import codecs
 import ecdsa
 from generating_private_key import Key_Generator
@@ -6,6 +8,8 @@ from generating_private_key import Key_Generator
 kg = Key_Generator()
 kg.seed_input("This is a truly random string, what about you?")
 private_key = kg.generate_key()
+
+#private_key = '3aba4162c7251c891207b747840551a71939b0de081f85c4e44cf7c13e41daa6'
 
 # 2. Converting private key from hexadecimal to bytes
 private_key_bytes = codecs.decode(private_key,'hex')
