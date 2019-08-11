@@ -1,5 +1,4 @@
 # hex private to hex public key implementation
-
 import codecs
 import ecdsa
 from generating_private_key import Key_Generator
