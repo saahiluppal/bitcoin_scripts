@@ -1,5 +1,4 @@
 
-
 address_hex = input()
 
 # base58 have every value of base64 except I,l,0,O,+,/ which arises ambiguity

@@ -7,7 +7,7 @@ kg = Key_Generator()
 kg.seed_input('this is a tryly random string, i tossed a dice and got tails. ;)')
 private_key = kg.generate_key()
 
-#private_key = '690147e965393318528cb062d1885367244342fd50bc56b96e2807f6e62e235e'
+private_key = '4330c1d018bcef7272d15cbcf74f3a4c6d9024a73d5363ae83a00dbea0610c9e'
 
 # 2. Converting private key from hexadecimal to bytes
 private_key_bytes = codecs.decode(private_key,'hex') 
