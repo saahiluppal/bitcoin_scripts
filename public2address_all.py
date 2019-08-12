@@ -58,9 +58,5 @@ def base58(address_hex):
         b58_string = '1' + b58_string
     return b58_string
 
-
-private_key = '690147e965393318528cb062d1885367244342fd50bc56b96e2807f6e62e235e'
-compressed_public_key = private_to_compressed_public(private_key)
-public_key = private_to_public(private_key)
-print(public_to_address(public_key))
-print(public_to_address(compressed_public_key))
+private_key = '4330c1d018bcef7272d15cbcf74f3a4c6d9024a73d5363ae83a00dbea0610c9e'
+print(private_to_public(private_key))
