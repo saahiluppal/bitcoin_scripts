@@ -1,1 +1,1 @@
-public to compressed address
+base64 implementation
