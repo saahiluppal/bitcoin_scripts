@@ -5,7 +5,7 @@ read VAR
 VAR=${VAR:-1}
 #shopt -s nocasematch
 
-case $VAR in 
+case $VAR in
     1 )
         if which bitcoind >/dev/null; then
             echo "Already installed";
@@ -70,12 +70,12 @@ case $VAR in
 
         # Install make if you dont have
 
-        sudo dnf install make  
+        sudo dnf install make
         make # -j4 (If required)
         sudo make install
 
         echo "Successfully installed BTC_Core_Node"
         ;;
-    * ) 
+    * )
         echo "Skipping"
 esac
